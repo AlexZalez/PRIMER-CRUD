@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maquinas</title>     
+</head>
+<body>
+    
+    <h1>Computadoras Registradas</h1>
+    <% maquinas.forEach( function (maquinas, index){%>
+        <fieldset style="display: inline;">
+            <legend>Computadora N°<%= index+1%></legend>
+            <ul>
+                <li>Operador: <%= maquinas.Operador %></li>
+                <li>Funcion: &nbsp;&nbsp;<%= maquinas.Funcion %></li>
+                <li>Estado: &nbsp;&nbsp;&nbsp;&nbsp;<%= maquinas.Estado %></li>
+                <li>N° de Serie: &nbsp;<%= maquinas.Nmro %></li>
+            </ul>
+            <a href="http://localhost:3000/manager/EliminarMaquina/<%= maquinas.id %>">Eliminar</a>&nbsp;
+            <a href="http://localhost:3000/manager/MarcarMaquina/<%= maquinas.id %>">Editar</a>
+        </fieldset>
+      <%}) %>
+      <br>
+      <a href="http://localhost:3000/"><button>HOME</button></a>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manager - Inicio</title>
+</head>
+<body>
+    <h1>Agregar Computadora</h1>
+    <form method="POST" action="/manager/AgregarMaquina">
+        <label for="Operador">Operador</label>
+        <input type="text" name="Operador" id="Operador" placeholder="Nombre del Operador" autofocus required maxlength="50"><br><br>        
+        <label for="Funcion">Funcion</label>
+        <input type="text" name="Funcion" id="Funcion" placeholder="Funcion a Desempeñar" autofocus required maxlength="50"><br><br>
+        <label for="Nmro">Numero de serie</label>
+        <input type="text" name="Nmro" id="Nmro" placeholder="Numero de serie" autofocus required maxlength="50"><br><br>
+        <label for="Estado">Estado</label>
+        <select name="Estado" id="Estado" autofocus required>
+            <option value="Operativa">Operativa</option>
+            <option value="Averiada">Averiada</option>
+            <option value="En Reparacion">En Reparacion</option>
+          </select><br><br>
+        <input type="submit" value="Guardar">
+    </form><br>
+    <a href="http://localhost:3000/"><button>HOME</button></a>
+</body>
+</html>

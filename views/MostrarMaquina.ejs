@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maquinas</title>     
+</head>
+<body>
+    
+    
+<h1>Resultado:</h1>
+        <div>
+            <ul>
+                <li>Operador: <%= OperadorId %></li>
+                <li>Funcion: &nbsp;&nbsp;<%= FuncionId %></li>
+                <li>Estado: &nbsp;&nbsp;&nbsp;&nbsp;<%= EstadoId %></li>
+                <li>N° de Serie: &nbsp;<%= NmroId %></li>
+            </ul>
+            <a href="http://localhost:3000/manager/EliminarMaquina/<%= valor %>">Eliminar</a>&nbsp;
+            <a href="http://localhost:3000/manager/MarcarMaquina/<%= valor %>">Editar</a>
+        </div>
+      
+      <a href="http://localhost:3000/"><button>HOME</button></a>
+</body>
+</html>
